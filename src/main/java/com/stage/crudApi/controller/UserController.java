@@ -2,7 +2,6 @@ package com.stage.crudApi.controller;
 
 import com.stage.crudApi.models.UserModel;
 import com.stage.crudApi.service.UserService;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +17,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/v1")
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-@EnableWebSecurity
 public class UserController {
     @Autowired
     UserService userService;
